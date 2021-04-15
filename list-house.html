@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpers House</title>
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <header class="bg-white py-site__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body py-0 px-2">
+                            <nav class="navbar navbar-expand-md navbar-light justify-content-start">
+                                <button class="navbar-toggler border-0 me-3 px-1" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <a class="navbar-brand text-site-primary fw-bold d-md-none" href="#">Corpers House</a>
+                                <div class="d-md-none ms-auto">
+                                    <a class="nav-link btn py-2 px-3 bg-site-accent" href="list-house.html">List a House</a>
+                                </div>
+                                <div class="collapse navbar-collapse w-auto left-nav pt-3 pt-md-0" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item me-md-3 active">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item me-md-3">
+                                            <a class="nav-link" href="#">Help</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="navbar-brand text-site-primary fw-bold d-none d-md-block mx-md-auto"
+                                    href="#">Corpers House</a>
+                                <div class="collapse navbar-collapse w-auto d-none d-lg-none" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link me-md-3" href="search.html">Find a House</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn py-2 px-3 bg-site-accent" href="list-house.html">List a House</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="latest-listing py-site__section__sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="fs-sub-headline">List a house</h2>
+                            <p class="mb-site">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Deleniti, consectetur?</p>
+                        </div>
+                        <div class="col-md-8 mb-4">
+                            <card class="card border-0 shadow-sm rounded-0">
+                                <div class="card-body">
+                                    <form action="" method="post" class="listing-form">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <input type="text" name="phone" id="phone" class="form-control"
+                                                        placeholder="">
+                                                    <label for="phone">Phone</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <input type="email" name="email" id="email" class="form-control"
+                                                        placeholder="">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <input type="number" min="1" name="price" id="price"
+                                                        class="form-control" placeholder="">
+                                                    <label for="price">Price</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <select name="category" id="category" class="form-control"
+                                                        placeholder="">
+                                                        <option value="">- select a category -</option>
+                                                        <option value="">Single Room</option>
+                                                        <option value="">Self Contain</option>
+                                                        <option value="">1 Bed Room</option>
+                                                        <option value="">2 Bed Room</option>
+                                                    </select>
+                                                    <label for="category">Select house type</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <select name="state" id="state" class="form-control" placeholder="">
+                                                        <option value="">- select a state -</option>
+                                                        <option value="">Akwa Ibom</option>
+                                                    </select>
+                                                    <label for="state">Select a state</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <select name="lga" id="lga" class="form-control" placeholder="">
+                                                        <option value="">- select a city -</option>
+                                                        <option value="">Uyo</option>
+                                                    </select>
+                                                    <label for="lga">Select LGA</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-4">
+                                                <div class="form-floating">
+                                                    <textarea name="description" id="description" class="form-control"
+                                                        style="height:80px;"></textarea>
+                                                    <label for="description">Description</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <select name="sell" id="sell" class="form-control" placeholder="">
+                                                        <option value="">No</option>
+                                                        <option value="">Yes</option>
+                                                    </select>
+                                                    <label for="sell">Item Available?</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-floating">
+                                                    <select name="duration" id="duration" class="form-control"
+                                                        placeholder="">
+                                                        <option value="">- Post Duration -</option>
+                                                        <option value="">1 Weeks</option>
+                                                        <option value="">2 Weeks</option>
+                                                        <option value="">1 Month</option>
+                                                        <option value="">2 Month</option>
+                                                    </select>
+                                                    <label for="duration">Select LGA</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn bg-site-accent">List House</button>
+                                    </form>
+                                </div>
+                            </card>
+                        </div>
+                        <div class="col-md-4 mb-4 d-none d-md-block text-site-secondary">
+                            <div class="">
+                                <p class="fw-bold small mb-0">* Phone</p>
+                                <p class="small">This is how you will be contacted by intrested corper, your whatsapp number is prefered.
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="fw-bold small mb-0">* Email</p>
+                                <p class="small">This is for us to tell you thank you and give you update about your
+                                    listing.</p>
+                            </div>
+                            <div class="">
+                                <p class="fw-bold small mb-0">* Decription</p>
+                                <p class="small">Your description should be detailedly brief. You can also tell if you are selling or giving out your house item.</p>
+                            </div>
+                            <div class="">
+                                <p class="fw-bold small mb-0">* Item Available?</p>
+                                <p class="small">We want to know if you are going to sell or giving (some) your  house items.</p>
+                            </div>
+                            <div class="">
+                                <p class="fw-bold small mb-0">* Listing Duration?</p>
+                                <p class="small">This is how long your listing will stay for.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="">
+        <section class="bg-site-primary py-site__section__sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mx-auto text-white text-center">
+                        <h2 class="text-white mb-site">Help a Corp member get a House.</h2>
+                        <p class="text-white mb-site">It's certainly difficult getting a house as a Corp member in a new
+                            state, <br />you
+                            went through the trouble and you are leaving. <br />List your house and save a Corp member
+                            the
+                            trouble.</p>
+
+                        <a href="list-house.html" class="btn bg-site-accent">List an Apartment</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section bg-site-accent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 d-md-flex justify-content-between text-center text-md-start py-2">
+                        <p class="mb-0">Powered with <i class="fa fa-heart text-danger"></i> by Oniontabs</p>
+                        <div class="">
+                            <a href=""><i class="fa fa-facebook-f"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

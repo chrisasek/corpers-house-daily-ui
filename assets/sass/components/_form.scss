@@ -1,0 +1,35 @@
+.form {
+    &-control {
+        border: 1px solid $color-light;
+        border-radius: 0;
+        transition: all .2s;
+        &:focus {
+            border: 0;
+            color: $color-dark;
+            font-weight: 600;
+            background: $color-light;
+            border-bottom: 1px solid $color-accent;
+            box-shadow: unset;
+        }
+    }
+}
+.listing-form .form {
+    &-control {
+        background: $color-gray;
+        &:focus {
+            color: $color-dark;
+            font-weight: 600;
+            background: $color-light;
+            border-bottom: 1px solid $color-accent;
+            box-shadow: unset;
+        }
+    }
+}
+// .custom-select:focus {
+//     border-color: $color-accent;
+//     box-shadow: 0 0 0 0.2rem rgba($color-accent, 0.5);
+// }
+
+label.error {
+    font-weight: small;
+}

@@ -1,0 +1,26 @@
+footer {
+    p {
+        color: rgba($color-black, 0.5);
+    }
+    .links {
+        a {
+            color: rgba($color-black, 0.5);
+            &:hover {
+                color: rgba($color-black, 0.7);
+                font-weight: bold;
+            }
+            &.active {
+                color: $color-accent;
+                font-weight: bold;
+            }
+        }
+    }
+    // .socials {
+    //     .btn {
+    //         color: rgba($color-black, 0.5);
+    //         &:hover {
+    //             color: $color-white;
+    //         }
+    //     }
+    // }
+}
